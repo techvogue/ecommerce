@@ -3,59 +3,90 @@ import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[88vh] flex flex-col bg-white text-black overflow-hidden ">
+    <div className="w-full h-[91vh] flex items-center justify-center bg-gray-100 relative overflow-hidden">
+      {/* Green Background Circle (Properly Positioned & Bigger) */}
+      <div className="absolute top-[40%] left-[55%] -translate-x-1/2 -translate-y-1/2 bg-green-200 rounded-full w-[480px] h-[480px] md:w-[550px] md:h-[550px]"></div>
 
-      {/* Centered Top Heading */}
-      <div className="z-10 w-full text-center pt-12 px-4">
-        <h1 className="text-6xl md:text-7xl font-bold leading-tight">
-          DISCOVER CLOTHES
-          <br />
-          UNIQUE STYLE
-        </h1>
+
+
+      {/* Main Content Box (Now Full Width for Proper Centering) */}
+      <div className="  relative w-full h-full  px-8  flex flex-col sm:flex-row items-center justify-between ">
+
+        {/* Text Section */}
+        <div className=" mt-48 sm:mt-0 w-1/2 sm:w-2/5 text-center md:text-left md:ml-28 z-5 ">
+          {/* Discount Badge */}
+          <div className="bg-black   text-white px-4 py-2 flex items-center justify-center rounded w-36 h-12 text-sm sm:text-md mx-auto md:ml-4 ">
+            <span className="text-xl sm:text-xxl">20%</span>
+            <span className="text-base sm:text-lg ml-1">OFF</span>
+          </div>
+
+          {/* Main Heading */}
+          <h1 className="text-5xl sm:text-9xl font-medium text-gray-800 mt-2 sm:mt-2 lg:mt-3 leading-tight">
+            Spring
+          </h1>
+
+          {/* Subheading */}
+          <h2 className="text-3xl sm:text-4xl font-medium text-gray-600 mt-3 pl-3">
+            Season Festival
+          </h2>
+
+          {/* Tagline */}
+          <p className="text-yellow-500  text-lg sm:text-xl mt-3 font-medium tracking-wide pl-3">
+            CATALOGUE 2025
+          </p>
+        </div>
+
+
+        {/* Image Section */}
+        <div className=" w-1/2 sm:w-3/5 h-full flex justify-center items-end ">
+          <img
+            src={assets.hero_img}
+            alt="Fashion Model"
+            className="w-full drop-shadow-lg"
+          />
+        </div>
+
       </div>
 
-      {/* Paragraph + Button at Bottom Right */}
-      <div className="absolute bottom-24 mr-10 px-8 md:right-2 max-w-xs text-justify  z-10 text-xl ">
-        <p className="text-lg  mb-4">
-          Explore a curated collection of clothing designed to complement your
-          personal style and elevate your everyday look.
+      {/* Limited Offer Text */}
+      {/* Limited Offer Section */}
+      <div className="absolute top-[15%] right-[3%] text-end p-4  bg-opacity-80 shado  hidden md:block">
+        <p className="Rubik text-3xl sm:text-4xl font-semibold leading-tight tracking-wide">
+          Limited
         </p>
-        <button className="inline-block px-6 py-2 right-0 bg-black text-white rounded-full">Shop Now</button>
-       
-          
-        
+        <p className="Rubik text-3xl sm:text-4xl font-medium leading-tight tracking-wide">
+          Time
+        </p>
+        <p className="Rubik text-3xl sm:text-4xl font-medium leading-tight tracking-wide">
+          Offer
+        </p>
+        <p className="text-sm sm:text-md font-normal pt-2 uppercase tracking-wider">
+          GET THE OFFER
+        </p>
       </div>
 
-      {/* Stats Section - Bottom Left */}
-      <div className="absolute bottom-24 left-0 md:left-2 text-left z-10 text-xl pl-12">
-        <p className="text-3xl font-bold">200+</p>
-        <p>International Brands</p>
-        
-        <p className="text-2xl font-bold mt-4">2K+</p>
-        <p>High-Quality Products</p>
-       
-        <p className="text-2xl font-bold mt-4">30K+</p>
-        <p>Happy Customers</p>
+
+
+      {/* 🔥 Continuous Marquee Section */}
+      <div className="absolute bottom-0 w-full overflow-hidden bg-black text-white text-xl p-4">
+        <div className="marquee">
+          <div className="track font-bold flex space-x-8 animate-marquee">
+            <span>Calvin Klein</span>
+            <span>Versace</span>
+            <span className="font-bold">Prada</span>
+            <span>Zara</span>
+            <span>Gucci</span>
+            {/* Duplicated for smooth animation */}
+            <span>Calvin Klein</span>
+            <span>Versace</span>
+            <span className="font-bold">Prada</span>
+            <span>Zara</span>
+            <span>Gucci</span>
+          </div>
+        </div>
       </div>
 
-      {/* Hero Image - Centered Bottom */}
-      <div className="absolute inset-0 z-0 flex items-end justify-center">
-        <img
-          alt="Fashionable person wearing stylish clothes"
-          className="w-full h-full object-contain"
-          src={assets.hero_img}
-        />
-      </div>
 
-      {/* Brand Names at Bottom */}
-      <div className="absolute bottom-0 w-full flex justify-center space-x-32 p-4 bg-black text-white z-10 text-xl">
-
-        <span>Calvin Klein</span>
-        <span>Versace</span>
-        <span className="font-bold">Prada</span>
-        <span>Zara</span>
-        <span>Gucci</span>
-      </div>
     </div>
   );
 };

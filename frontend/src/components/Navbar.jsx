@@ -17,7 +17,7 @@ const logout=()=>{
 }
 
   return (
-    <div className="flex items-center justify-between py-5   font-medium px-4 sm:px-[4vw] ms:px-[6vw] lg:px-[8vw] ">
+    <div className="flex items-center justify-between py-3   font-medium px-4 sm:px-[4vw] ms:px-[6vw] lg:px-[8vw] bg-gray-200 ">
       <Link to="/">
         <img src={assets.logo} className="w-36" alt="" />
       </Link>
