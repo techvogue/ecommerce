@@ -1,9 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets/assets";
 import RelatedProduct from "../components/RelatedProduct";
-
+import { useParams } from "react-router-dom";
 function Product() {
   const { productId } = useParams();
   const { products, currency,addToCart } = useContext(ShopContext);
