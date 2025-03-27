@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes,Route } from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import Collection from './pages/Collection'
 import About from './pages/About'
@@ -13,7 +13,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { SearchBar } from './components/SearchBar'
 import Verify from './pages/Verify'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   return ( 
