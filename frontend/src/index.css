@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,6 +25,36 @@ a.active hr{
     }
   }
 
-
-
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+  }
   
+  .track {
+    display: flex;
+    gap: 5rem;  /* Adjust spacing between texts */
+    min-width: 200%; /* Ensures enough text to scroll */
+    animation: marquee 8s linear infinite;
+  }
+  
+  .marquee-item {
+    display: inline-block;
+    padding: 0 2rem; /* Additional padding for spacing */
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+  .Rubik {
+    font-family: "Rubik", sans-serif;
+    letter-spacing: .2rem;
+}
