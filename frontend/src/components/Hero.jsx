@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 const Hero = () => {
   
   return (
-    <div className="w-full h-[93vh] md:h-[91vh] flex items-center justify-center bg-gray-100 relative overflow-hidden">
+    <div className="w-full h-[91vh] md:h-[91vh] flex items-center justify-center bg-gray-100 relative overflow-hidden">
       {/* Green Background Circle (Properly Positioned & Bigger) */}
       <div className="absolute top-[40%] left-[55%] -translate-x-1/2 -translate-y-1/2 bg-green-200 rounded-full w-[525px] h-[525px] md:w-[550px] md:h-[550px]"></div>
 
