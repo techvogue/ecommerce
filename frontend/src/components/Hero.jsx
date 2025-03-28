@@ -39,11 +39,11 @@ const Hero = () => {
 
 
         {/* Image Section */}
-        <div className=" sm:w-3/5 h-full flex justify-center items-end sm:mt-20 sm:p-1">
+        <div className="w-[130%] pl-5 sm:pl-0 sm:w-3/5 h-full flex justify-center items-end sm:mt-20 sm:p-1">
           <img
             src={assets.hero_img}
             alt="Fashion Model"
-            className="w-fulldrop-shadow-lg"
+            className="drop-shadow-lg"
           />
         </div>
 
