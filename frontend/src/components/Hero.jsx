@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 const Hero = () => {
   
   return (
-    <div className="w-full h-[92vh] md:h-[91vh] flex items-center justify-center bg-gray-100 relative overflow-hidden">
+    <div className="w-full h-[93vh] md:h-[91vh] flex items-center justify-center bg-gray-100 relative overflow-hidden">
       {/* Green Background Circle (Properly Positioned & Bigger) */}
       <div className="absolute top-[40%] left-[55%] -translate-x-1/2 -translate-y-1/2 bg-green-200 rounded-full w-[480px] h-[480px] md:w-[550px] md:h-[550px]"></div>
 
@@ -69,7 +69,7 @@ const Hero = () => {
 
 
       {/* 🔥 Continuous Marquee Section */}
-      <div className="absolute bottom-0 w-full overflow-hidden bg-black text-white text-xl p-4">
+      <div className="absolute bottom-0 w-full overflow-hidden bg-black text-white text-xl p-5">
         <div className="marquee">
           <div className="track font-bold flex space-x-8 animate-marquee">
             <span>Calvin Klein</span>
