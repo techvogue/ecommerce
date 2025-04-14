@@ -1,38 +1,60 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Hero = () => {
-  
+  const container = useRef();
+
+  useGSAP(() => {
+    gsap.from(".box", { 
+      x: -40,
+      opacity: 0,
+      duration: 1.5, 
+      ease: "power3.out",
+      stagger: 0.2,
+      z:-2
+     });
+  }, { scope: container });
+  useGSAP(() => {
+    gsap.from(".off", { 
+      y: 30,
+      opacity: 0,
+      duration: 1.5, 
+      ease: "power3.out",
+      stagger: 0.2,
+      z:-2
+     });
+  }, { scope: container });
   return (
     <div className="w-full h-[91vh] md:h-[91vh] flex items-center justify-center bg-gray-100 relative overflow-hidden">
       {/* Green Background Circle (Properly Positioned & Bigger) */}
       <div className="absolute top-[40%] left-[55%] -translate-x-1/2 -translate-y-1/2 bg-green-200 rounded-full w-[525px] h-[525px] md:w-[550px] md:h-[550px]"></div>
 
-
-
       {/* Main Content Box (Now Full Width for Proper Centering) */}
       <div className="  relative w-full h-full  px-8  flex flex-col sm:flex-row items-center justify-between ">
 
         {/* Text Section */}
-        <div className=" mt-20 sm:mt-0  sm:w-2/5 text-center md:text-left md:ml-28 z-5 ">
+        <div ref={container} className=" mt-20 sm:mt-0  sm:w-2/5 text-center md:text-left md:ml-28 z-5 ">
           {/* Discount Badge */}
           <div className="bg-black  text-white px-4 py-2 flex items-center justify-center rounded w-36 h-12 text-sm sm:text-md mx-auto md:ml-4 ">
-            <span className="text-xl sm:text-xxl">20%</span>
-            <span className="text-base sm:text-lg ml-1">OFF</span>
+            <span className="off text-xl sm:text-xxl pr-1">20%</span>
+            <span className="off text-base sm:text-lg ml-1">OFF</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-7xl sm:text-9xl font-medium text-gray-800 mt-2 sm:mt-2 lg:mt-3 leading-tight">
+          <h1  className="box text-7xl sm:text-9xl font-medium text-gray-800 mt-2 sm:mt-2 lg:mt-3 leading-tight">
             Spring
           </h1>
 
           {/* Subheading */}
-          <h2 className="text-4xl sm:text-5xl font-medium text-gray-600 mt-3 pl-3">
+          <h2 className="box text-4xl sm:text-5xl font-medium text-gray-600 mt-3 pl-3">
             Season Festival
           </h2>
 
           {/* Tagline */}
-          <p className="text-yellow-500  text-lg sm:text-xl mt-5 md:mt-3 font-medium tracking-wide pl-3">
+          <p className="box text-yellow-500  text-lg sm:text-xl mt-5 md:mt-3 font-medium tracking-wide pl-3">
             CATALOGUE 2025
           </p>
         </div>
