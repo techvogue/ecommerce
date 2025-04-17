@@ -23,7 +23,7 @@ const Login = () => {
           password,
         });
 
-        if (response.data.token) {
+        if (response.data.success) {
           setCurrentState('Login'); 
           setName('');
           setEmail('');
@@ -113,9 +113,6 @@ const Login = () => {
             Create account
             
           </p>
-   useEffect(() => {
-  console.log(currentState);
-}, [currentState]);
 
         ) : (
           <p
