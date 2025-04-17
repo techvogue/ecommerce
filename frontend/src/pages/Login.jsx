@@ -111,7 +111,12 @@ const Login = () => {
             className="cursor-pointer"
           >
             Create account
+            
           </p>
+   useEffect(() => {
+  console.log(currentState);
+}, [currentState]);
+
         ) : (
           <p
             onClick={() => setCurrentState('Login')}
