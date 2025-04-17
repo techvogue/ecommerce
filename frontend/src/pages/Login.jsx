@@ -23,14 +23,14 @@ const Login = () => {
           password,
         });
 
-        if (response.data.success) {
+        if (response.data.token) {
           setCurrentState('Login'); 
           setName('');
           setEmail('');
           setPassword('');
           toast.success(response.data.message + '. Please log in.');
         } else {
-          toast.error("Registration failed");
+          toast.error("response.error.message);
         }
       } else {
         const response = await axios.post(backendUrl + '/api/user/login', {
