@@ -17,7 +17,7 @@ An end-to-end eCommerce web application built using the **MERN stack**, featurin
 - Add, update & delete products
 - View all orders placed
 - Manage user access & roles
-- Dashboard with key metrics *(optional)*
+- Dashboard with key metrics 
 
 ## 🧰 Tech Stack
 
@@ -27,8 +27,8 @@ An end-to-end eCommerce web application built using the **MERN stack**, featurin
 | **Backend** | Node.js, Express.js                                                  |
 | **Database**| MongoDB (Mongoose)                                                   |
 | **Auth**    | JWT (JSON Web Tokens), bcrypt for password hashing                   |
-| **Image**   | Cloudinary + Multer *(optional)*                                     |
-| **Payments**| Stripe or Razorpay *(optional)*                                      |
+| **Image**   | Cloudinary + Multer                                                  |
+| **Payments**| Stripe                                                               |
 | **Deployment**| Vercel (frontend) + Render (backend)                               |
 
 ## 📁 Folder Structure
