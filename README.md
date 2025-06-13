@@ -41,7 +41,7 @@ ecommerce-platform/
 └── README.md     # Project documentation
 
 ```
-
+---
 ### 📦 Installation
 
 ```bash
@@ -51,7 +51,7 @@ ecommerce-platform/
 git clone https://github.com/techvogue/codeJudge.git
 cd ecommerce-platform
 ```
-
+---
 ### ⚙️ Setup Backend
 
 ```bash
