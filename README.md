@@ -40,17 +40,17 @@ ecommerce-platform/
 ├── admin/        # React frontend with Tailwind CSS for admin panel
 └── README.md     # Project documentation
 
+```
 
-## 📦 Installation
-
-### Clone the repository
+### 📦 Installation
 
 ```bash
+### Clone the repository
+
+
 git clone https://github.com/techvogue/codeJudge.git
 cd ecommerce-platform
 ```
-
----
 
 ### ⚙️ Setup Backend
 
